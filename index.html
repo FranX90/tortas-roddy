@@ -5,11 +5,11 @@
   <title>Agregar contacto</title>
   <script>
     window.onload = function () {
-      window.location.href = "intent://contacts/people/new/#Intent;action=com.android.contacts.action.INSERT_CONTACT;type=vnd.android.cursor.dir/contact;S.name=Juan%20Pérez;S.phone=1133445566;end;";
+      window.location.href = "intent://#Intent;action=android.intent.action.SHOW_OR_CREATE_CONTACT;S.android.intent.extra.PHONE=1133445566;S.android.intent.extra.FORCE_CREATE=true;end;";
     };
   </script>
 </head>
 <body>
-  <p>Si no se abre el formulario para agregar el contacto automáticamente, hacé clic <a href="intent://contacts/people/new/#Intent;action=com.android.contacts.action.INSERT_CONTACT;type=vnd.android.cursor.dir/contact;S.name=Juan%20Pérez;S.phone=1133445566;end;">acá</a>.</p>
+  <p>Si no se abre el formulario para agregar el contacto automáticamente, hacé clic <a href="intent://#Intent;action=android.intent.action.SHOW_OR_CREATE_CONTACT;S.android.intent.extra.PHONE=1133445566;S.android.intent.extra.FORCE_CREATE=true;end;">acá</a>.</p>
 </body>
 </html>
